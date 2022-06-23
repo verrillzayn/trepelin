@@ -1,12 +1,10 @@
 body {
-  height: 2000px;
   background-color: #fefae0;
 }
 
 /* css navbar 1 */
 
 #NAV {
-  position: fixed;
   border-bottom: 1px solid rgba(250, 235, 215, 0.146);
   background-color: #2c6e49;
 }
@@ -17,12 +15,14 @@ body {
 
 .navbar-brand {
   transform: translate(100px, 0);
-  font-family: 'Playfair Display', serif;
 }
+
 #logo {
-  font-size: 30px;
+  font-size: 40px;
+  letter-spacing: 0.1ch;
   color: rgba(250, 235, 215, 0.886);
   position: relative;
+  font-family: 'Dancing Script', cursive;
 }
 #searchbtn {
   background-color: #2c6e49;
@@ -212,11 +212,16 @@ body {
   position: absolute;
   width: 100%;
   height: 40px;
-  /* border: 2px solid blue; */
   top: 100px;
   animation: animasibtnnav 1s ease forwards;
 }
+
 #tmbldlm {
+  display: none;
+}
+
+.n1-2 #tmbldlm {
+  display: inline;
   position: absolute;
   right: 450px;
   outline: none;
@@ -226,17 +231,21 @@ body {
   border: none;
 }
 
-#tmbldlm:hover {
+.n1-2 #tmbldlm:hover {
   border: none;
   outline: none;
 }
 
-#tmbldlm:focus {
+.n1-2 #tmbldlm .iconN1-2:hover {
+  color: rgb(32, 47, 32);
+}
+
+.n1-2 #tmbldlm:focus {
   border: none;
   outline: none;
 }
 
-#tmbldlm:active {
+.n1-2 #tmbldlm:active {
   border: none;
   outline: none;
 }
@@ -262,7 +271,7 @@ body {
   color: inherit;
 }
 
-.actip {
+.n1-2 .actip {
   display: inline-flex;
   justify-content: center;
   position: absolute;
@@ -270,22 +279,40 @@ body {
   height: 40px;
 }
 
+.actip {
+  display: none;
+}
+
 #IG1 {
   display: none;
 }
 
-.actip #IG1 {
+.n1-2 .actip #IG1 {
   display: inline-flex;
-  justify-content: center;
-}
-
-.actip #IG1 .IG12 {
+  justify-content: space-around;
+  border-radius: 30px;
   width: 30%;
   height: 100%;
+  padding-right: 50px;
+  background-color: white;
+}
+
+.n1-2 .actip #IG1 .IG12 {
+  height: 100%;
+  width: 50%;
   border: none;
-  outline: none;
-  border-radius: 30px;
-  padding: 20px;
+  padding-left: 15px;
+}
+
+.n1-2 .actip #IG1 .provinsi {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.n1-2 .actip .garisIG {
+  height: 50%;
+  margin: auto;
+  color: black;
 }
 
 .actip #srchN1-2 {
@@ -341,7 +368,6 @@ body {
   background-color: #2c6e49;
   width: 100%;
   height: 70px;
-  position: fixed;
   top: 87px;
   z-index: 100;
 }
@@ -420,8 +446,8 @@ h6 {
 /* css content page */
 
 #Ccontent {
-  margin-top: 180px;
-  padding: 10px;
+  margin-top: 100px;
+  padding: 1px;
 }
 
 .carousel-inner {
@@ -442,3 +468,166 @@ h6 {
 h2 {
   font-family: 'Varela Round', sans-serif;
 }
+
+/* content*/
+
+/* btn 1 */
+
+.linkpage1 {
+  text-decoration: none;
+  color: inherit;
+}
+.linkpage1:hover {
+  color: inherit;
+}
+
+#c1 {
+  padding: none;
+}
+
+.divContentbtn1 {
+  display: none;
+}
+#c1 .divContentbtn1 {
+  display: block !important;
+}
+/* end btn 1 */
+
+/* btn 2 */
+#c2 {
+  padding: none;
+}
+
+.divContentbtn2 {
+  display: none;
+}
+
+#c2 .divContentbtn2 {
+  display: block !important;
+}
+
+/* end btn 2 */
+
+/* btn 3 */
+#c3 {
+}
+
+.divContentbtn3 {
+  display: none;
+}
+
+#c3 .divContentbtn3 {
+  display: block !important;
+}
+
+/* end btn 3 */
+
+/* btn 4 */
+#c4 {
+}
+
+.divContentbtn4 {
+  display: none;
+}
+
+#c4 .divContentbtn4 {
+  display: block !important;
+}
+/* end btn 4 */
+
+/* btn 5 */
+#c5 {
+}
+
+.divContentbtn5 {
+  display: none;
+}
+
+#c5 .divContentbtn5 {
+  display: block !important;
+}
+/* end btn 5 */
+
+/* btn 6 */
+#c6 {
+}
+
+.divContentbtn6 {
+  display: none;
+}
+
+#c6 .divContentbtn6 {
+  display: block !important;
+}
+
+/* end btn 6 */
+
+/* btn 7 */
+#c7 {
+}
+
+.divContentbtn7 {
+  display: none;
+}
+
+#c7 .divContentbtn7 {
+  display: block !important;
+}
+
+/* end btn 7 */
+
+/* btn 8 */
+#c8 {
+}
+.divContentbtn8 {
+  display: none;
+}
+
+#c8 .divContentbtn8 {
+  display: block !important;
+}
+
+/* end btn 8 */
+
+/* btn 9 */
+
+#c9 {
+  border: 2px solid burlywood;
+}
+.divContentbtn9 {
+  display: none;
+}
+
+#c9 .divContentbtn9 {
+  display: block !important;
+}
+
+/* end btn 9 */
+
+/* btn 10 */
+
+#c10 {
+}
+
+.divContentbtn10 {
+  display: none;
+}
+#c10 .divContentbtn10 {
+  display: block !important;
+}
+
+/* end btn 10 */
+
+/* btn 11 */
+
+#c11 {
+}
+
+.divContentbtn11 {
+  display: none;
+}
+
+#c11 .divContentbtn11 {
+  display: block !important;
+}
+/* end btn 11 */
