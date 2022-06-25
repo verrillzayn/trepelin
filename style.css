@@ -483,11 +483,13 @@ h2 {
 
 #c1 {
   padding: none;
+  padding-top: 20px;
 }
 
 .divContentbtn1 {
   display: none;
 }
+
 #c1 .divContentbtn1 {
   display: block !important;
 }
